@@ -101,6 +101,7 @@ body {
 .education h2,
 .training h2,
 .experience h2,
+.languages h2,
 .skills h2 {
     font-size: 2rem;
     font-weight: 700;
@@ -118,6 +119,12 @@ body {
 .education,
 .training,
 .experience {
+    border-bottom: 2px solid #e9cfcf;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.languages {
     border-bottom: 2px solid #e9cfcf;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
