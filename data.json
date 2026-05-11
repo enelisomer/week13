@@ -1,0 +1,20 @@
+{
+  "firstName": "Eneli",
+  "lastName": "Sõmer",
+  "age": 37,
+  "email": "eneli.somer@tktk.ee",
+  "phone": "+372 5680 0900",
+  "location": "Tallinn",
+
+  "skills": [
+    "Hea suhtlemisoskus",
+    "Meeskonnatöö",
+    "Ajaplaneerimine",
+    "Probleemide lahendamine"
+  ],
+
+  "languages": [
+    "Eesti keel",
+    "Inglise keel"
+  ]
+}

@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --primary-color: #000000;
+    --accent-color: #F8C6C6;
+    --background-color: #FBFBEB;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+.cv {
+    width: 70%;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    gap: 4rem;
+    background-color: var(--background-color);
+}
+
+.content {
+    border-left: 2px solid #f3cfcf;
+    padding-left: 3rem;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1rem;
+}
+
+.profile-image {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: 50% 30%;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+.name h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    white-space: nowrap;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-list i {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.about p {
+    max-width: 300px;
+    line-height: 1.5;
+}
+
+.contact h2,
+.about h2,
+.education h2,
+.training h2,
+.experience h2,
+.skills h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.education ul,
+.training ul,
+.skills ul,
+.experience ul {
+    padding-left: 1.2rem;
+    line-height: 1.8;
+}
+
+.education,
+.training,
+.experience {
+    border-bottom: 2px solid #e9cfcf;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+
+.skills {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.job {
+    margin-bottom: 2rem;
+}
+
+.job h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+@media (max-width: 480px) {
+
+    .cv {
+        width: 100%;
+        padding: 1.5rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .content {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .contact-image {
+        width: 110px;
+        height: 110px;
+        margin: 0;
+        flex-shrink: 0;
+    }
+
+    .contact-details {
+        flex: 1;
+    }
+
+    .name h1 {
+        font-size: 1.7rem;
+        white-space: nowrap;
+        margin-bottom: 0.5rem;
+        line-height: 1.1;
+    }
+
+    .contact-info h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-list li {
+        justify-content: flex-start;
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .sidebar {
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 0;
+    }
+
+    .about p {
+        max-width: 100%;
+        margin-top: 1.5rem;
+    }
+}
